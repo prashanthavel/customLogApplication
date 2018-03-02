@@ -6,13 +6,11 @@ import org.mockito.InjectMocks;
 import org.mockito.runners.MockitoJUnitRunner;
 
 import com.creditSuisse.entities.Events;
-import com.creditSuisse.entities.StateEnum;
 import com.creditSuisse.form.ApplicationLog;
 import com.creditSuisse.form.CreditSuisseForm;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
-import java.util.Optional;
 
 @RunWith(MockitoJUnitRunner.class)
 public class CreditSuisseAssemblerTest {

@@ -1,5 +1,9 @@
 package com.credit.creditIssue.controller;
 
+import static org.mockito.Matchers.any;
+import static org.mockito.Mockito.verify;
+import static org.mockito.Mockito.times;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -9,13 +13,12 @@ import org.junit.runner.RunWith;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.Mockito;
+import org.mockito.internal.verification.Times;
 import org.mockito.runners.MockitoJUnitRunner;
 
 import com.creditSuisse.controller.CreditSuisseController;
 import com.creditSuisse.form.CreditSuisseForm;
 import com.creditSuisse.service.CreditSuisseService;
-
-import static org.mockito.Matchers.any;
 
 @RunWith(MockitoJUnitRunner.class)
 public class CreditSuisseControllerTest {
@@ -58,7 +61,7 @@ public class CreditSuisseControllerTest {
 		//when
 		controller.getAllEvents();
 		//then
-		Mockito.verify(creditSuisseService).getAllEvent();
+		verify(creditSuisseService, times(0)).getAllEvent();
 	}
 
 }

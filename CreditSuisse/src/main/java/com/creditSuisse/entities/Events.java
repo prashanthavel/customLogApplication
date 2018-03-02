@@ -34,10 +34,10 @@ public class Events {
 			this.applicationLog = new ApplicationLog();
 		}
 	}
-	public Integer getEventId() {
+	public Integer getId() {
 		return id;
 	}
-	public void setEventId(Integer eventId) {
+	public void setId(Integer eventId) {
 		this.id = eventId;
 	}
 	public String getEventIdentifer() {
